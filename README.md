@@ -23,4 +23,4 @@ This project is licensed under the [MIT License](link-to-license-file).
 
 ## Acknowledgments
 - Special thanks to [Hitesh Choudhary](https://github.com/hiteshchoudhary) for their guidance and mentorship through an amzing ReactJs series.
-- Icons by FontAwesome (link)
+- Icons by FontAwesome (https://fontawesome.com/)
