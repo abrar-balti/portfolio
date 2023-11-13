@@ -75,38 +75,7 @@ const Header = () => {
                   +92 -320- 9798- 287
                 </a>
               </li>
-              {/* <li className="md:px-3 px-1">
-                <a
-                  href="#"
-                  className="md:py-[15px] md:px-2 hover:bg-[#497ADE] hover:text-white text-center"
-                >
-                  Skills
-                </a>
-              </li>
-              <li className="md:px-3 px-1">
-                <a
-                  href="#"
-                  className="md:py-[15px] md:px-2 hover:bg-[#497ADE] hover:text-white text-center"
-                >
-                  Education
-                </a>
-              </li>
-              <li className="md:px-3 px-1">
-                <a
-                  href="#"
-                  className="md:py-[15px] md:px-2 hover:bg-[#497ADE] hover:text-white text-center"
-                >
-                  Projects
-                </a>
-              </li>
-              <li className="md:px-3 px-1">
-                <a
-                  href="#"
-                  className="md:py-[15px] md:px-2 hover:bg-[#497ADE] hover:text-white text-center"
-                >
-                  Contact
-                </a>
-              </li> */}
+      
             </ul>
           </div>
           <div className="btn hidden md:block">
