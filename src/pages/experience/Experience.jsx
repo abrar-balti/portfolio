@@ -1,5 +1,6 @@
 import React from "react";
-
+import xgrid from "../../assets/xgrid-logo-1.png";
+import hanjra from "../../assets/hanjra.png";
 const Experience = () => {
   return (
     <>
@@ -13,8 +14,8 @@ const Experience = () => {
           </div>
 
           <div className="experience-header flex justify-start items-center  px-4 bg-[#121c31] shadow my-3 rounded">
-            <div className="header-left mr-5 border-2 text-center px-4 py-6 rounded my-3 border-blue-600 shadow-xl">
-              <h1>Hanjra Group of Companies</h1>
+            <div className="header-left mr-5 border-2 text-center px-4 py-1 rounded my-3 border-blue-600 shadow-xl w-[120px] ">
+              <img src={hanjra} alt="" className="h-[80px] ml-3 text-center " />
             </div>
             <div className="header-right">
               <p>
@@ -24,7 +25,7 @@ const Experience = () => {
                 Present
               </p>
               <p>Web Developer</p>
-              <p>MERN + Wordpress</p>
+              <p className="text-[#03CC5B]">MERN + Wordpress</p>
             </div>
           </div>
           <div className="experience-body px-4 py-4 bg-[#121c31] shadow my-3 rounded ">
@@ -47,7 +48,7 @@ const Experience = () => {
           </div>
           <div className="experience-header flex justify-start items-center  px-4 bg-[#121c31] shadow my-3 rounded">
             <div className="header-left mr-5 border-2 text-center px-4 py-6 rounded my-3 border-blue-600 shadow-xl">
-              <h1>Xgrid.co (Islamabad)</h1>
+              <img src={xgrid} alt="" className="w-[100px]" />
             </div>
             <div className="header-right">
               <p>
@@ -56,7 +57,7 @@ const Experience = () => {
                 30 Augest
               </p>
               <p>Internee</p>
-              <p>MERN- Stack</p>
+              <p className="text-[#03CC5B]">MERN- Stack</p>
             </div>
           </div>
           <div className="experience-body px-4 py-4 bg-[#121c31] shadow my-3 rounded mb-8">

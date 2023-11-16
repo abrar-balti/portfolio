@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import {
   faUserTie,
   faCode,
@@ -9,8 +9,10 @@ import {
   faListCheck,
   faAddressBook,
   faEnvelope,
-  faPhone
+  faPhone,
+  faHome,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link, NavLink } from "react-router-dom";
 
 import profileImage from "../../assets/abrar.jpg";
 import mobileImage from "../../assets/profile.jpg";
@@ -69,13 +71,12 @@ const Header = () => {
                   className="md:py-[16px] md:px-2 hover:bg-[#497ADE] hover:text-white "
                 >
                   <FontAwesomeIcon
-                    icon={faPhone}
+                    icon={faWhatsapp}
                     className="text-xl px-1 mx-1 text-white mt-1 bg-[#0F172A] rounded"
                   ></FontAwesomeIcon>
                   +92 -320- 9798- 287
                 </a>
               </li>
-      
             </ul>
           </div>
           <div className="btn hidden md:block">
@@ -95,7 +96,7 @@ const Header = () => {
 
         {/* Mobile Menu */}
         <div
-          className={`mobile-menu md:h-[600px] md:w-[300px] bg-[#0F172A] text-white border rounded-md ${
+          className={`w-[80%] mobile-menu md:h-[600px] md:w-[300px] bg-[#0F172A] text-white border border-[#0F172A] rounded-md ${
             isMobileMenuOpen ? "mobile-menu-open" : ""
           }`}
         >
@@ -107,14 +108,32 @@ const Header = () => {
           </a>
           <ul>
             <li>
-              <a href="#">
-                {" "}
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  `${isActive ? "text-green-600" : " text-red-500"} `
+                }
+              >
+                <FontAwesomeIcon
+                  icon={faHome}
+                  className="mr-4 text-[#497ADE]"
+                />
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/experience"
+                className={({ isActive }) =>
+                  `${isActive ? "text-green-600" : "text-red-500"} `
+                }
+              >
                 <FontAwesomeIcon
                   icon={faUserTie}
                   className="mr-4 text-[#497ADE]"
-                />{" "}
+                />
                 Experience
-              </a>
+              </NavLink>
             </li>
             <li>
               <a href="#">
@@ -160,7 +179,7 @@ const Header = () => {
           <img
             src={mobileImage}
             alt=""
-            className="rounded-lg shadow-xl border-[2px] border-[#ffffff] overflow-hidden mt-[180px] md:w-[300px] h-[320px] md:mt-0"
+            className="rounded-lg shadow-xl border-[2px] border-[#ffffff] overflow-hidden mt-[70px] md:w-[300px] h-[320px] md:mt-0"
           />
         </div>
       </nav>
