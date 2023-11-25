@@ -136,14 +136,14 @@ const Header = () => {
               </NavLink>
             </li>
             <li>
-              <a href="#">
+              <Link to="skills">
                 {" "}
                 <FontAwesomeIcon
                   icon={faCode}
                   className="mr-3 text-[#497ADE] md:text-xl"
                 />
                 Skills
-              </a>
+              </Link>
             </li>
             <li>
               <a href="#">
@@ -165,14 +165,14 @@ const Header = () => {
               </a>
             </li>
             <li>
-              <a href="#">
+              <Link to="contact">
                 {" "}
                 <FontAwesomeIcon
                   icon={faAddressBook}
                   className="mr-4 text-[#497ADE]"
                 />
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
 
