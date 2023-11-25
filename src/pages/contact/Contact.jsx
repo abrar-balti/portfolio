@@ -22,26 +22,26 @@ const Contact = () => {
           </h1>
 
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure,
-            saepe.
+            Let's connect and turn ideas into reality. Reach out – I'm just a
+            message away!
           </p>
           <FontAwesomeIcon
             icon={faLocation}
-            className="mt-12  bg-blue-600 px-2 py-2 rounded"
+            className="mt-12  bg-blue-600 px-2 py-2 rounded hover:bg-blue-800 hover:cursor-pointer"
           />
           <h2>Islamabad</h2>
           <FontAwesomeIcon
             icon={faEnvelopeSquare}
-            className="mt-12 bg-blue-600  px-2 py-2 rounded"
+            className="mt-12 bg-blue-600  px-2 py-2 rounded hover:bg-blue-800 hover:cursor-pointer"
           />
           <h2>abrarbulti@gmail.com</h2>
           <FontAwesomeIcon
             icon={faPhone}
-            className="mt-12 bg-blue-600  px-2 py-2 rounded"
+            className="mt-12 bg-blue-600  px-2 py-2 rounded hover:bg-blue-800 hover:cursor-pointer"
           />
           <h2>+92- 320-9798-287</h2>
         </div>
-        <div className="contact-right  flex flex-col mt-12 gap-1 md:ml-3">
+        <div className="contact-right  flex flex-col mt-12 gap-1 md:ml-3 md:w-96">
           <label htmlFor="Name">Your Name</label>
           <input
             type="text"
@@ -64,13 +64,13 @@ const Contact = () => {
             className="p-2 rounded outline-none bg-gray-200 text-black "
           />
           <label htmlFor="Message">Message</label>
-          <input
-            type="text"
-            name=""
-            id=""
-            className="p-12 rounded outline-none  bg-gray-200 text-black"
+          <textarea
+            name="message"
+            id="message"
+            className="px-2 py-1 rounded outline-none bg-gray-200 text-black"
             placeholder="Your Message"
-          />
+            rows="4" // You can adjust the number of rows as needed
+          ></textarea>
           <button className="bg-[#497ADE] text-white px-2 py-1 rounded mt-2 cursor-pointer hover:bg-blue-600">
             Send
           </button>
